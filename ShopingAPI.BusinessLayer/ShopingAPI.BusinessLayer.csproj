@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\SessionUser.cs" />
+    <Compile Remove="ViewModel\AutomapperProfiles.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Imagekit" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.14" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopingAPI.DataLayer\ShopingAPI.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>

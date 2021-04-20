@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WebAPI\BACKUP_OrdersOldController.cs" />
+    <Compile Remove="Controllers\WebAPI\ProductPricesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="EFCore.NamingConventions" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.14" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.12.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopingAPI.BusinessLayer\ShopingAPI.BusinessLayer.csproj" />
+    <ProjectReference Include="..\ShopingAPI.DataLayer\ShopingAPI.DataLayer.csproj" />
+  </ItemGroup>
+
+
+</Project>
